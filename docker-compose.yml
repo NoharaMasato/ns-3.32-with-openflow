@@ -1,0 +1,12 @@
+version: '3'
+services:
+  ns-3:
+    build: .
+    container_name: ns-3.32
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - $HOME/.Xauthority:/root/.Xauthority
+    network_mode: "host"
+    tty: true
+

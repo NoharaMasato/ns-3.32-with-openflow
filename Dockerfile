@@ -1,6 +1,7 @@
 FROM ubuntu:18.04
 
-RUN apt-get update && apt-get install -y git wget gcc g++ python python3 python3-dev mercurial libxml2 libxml2-dev libboost-all-dev
+RUN apt-get update && apt-get install -y git wget gcc g++ python python3 python3-dev mercurial libxml2 libxml2-dev libboost-all-dev \
+    gir1.2-goocanvas-2.0 python-gi python-gi-cairo python-pygraphviz python3-gi python3-gi-cairo python3-pygraphviz gir1.2-gtk-3.0 ipython ipython3
 
 RUN wget https://www.nsnam.org/release/ns-allinone-3.32.tar.bz2 && tar xjf ns-allinone-3.32.tar.bz2
 
