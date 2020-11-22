@@ -9,4 +9,3 @@ services:
       - $HOME/.Xauthority:/root/.Xauthority
     network_mode: "host"
     tty: true
-
